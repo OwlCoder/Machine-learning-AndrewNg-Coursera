@@ -27,12 +27,14 @@ for i=1:numIters
         theta(row) = theta(row) - alpha / m * sum((predictions - Y) .* X(:,row));
    end 
 end
-%`````````````````cost at this``````````````````````````````
+%`````````````````cost at this and prediction``````````````````````````
 theta
 J=(1/(2*m))*(sum((predictions-Y).^2));
-x_eg=[1650 3]
+x_eg=[1650 3];
+%normalizing
 x_eg(1)=(x_eg(1)-mu(1))/sigma(1);
 x_eg(2)=(x_eg(2)-mu(2))/sigma(2);
-x_eg=P
+x_eg=[1 x_eg];
 price=x_eg*theta;
 fprintf('predicting for 1650 sqft, 3 bedroom house: %f',price)
+%``````````````````````normal equation`````````````````````````````````
