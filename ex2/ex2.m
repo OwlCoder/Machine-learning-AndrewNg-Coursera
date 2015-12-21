@@ -1,3 +1,7 @@
+%In this code, I am trying to use logistic regression (linear decision
+%boundary) to predict if the student is admitted or not depending on two
+%features, Exam 1 and 2 scores.
+
 close all;
 clear all;
 clc;

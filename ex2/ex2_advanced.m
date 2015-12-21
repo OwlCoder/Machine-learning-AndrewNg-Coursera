@@ -1,3 +1,11 @@
+%In this code, I am trying to use logistic regression (non-linear decision
+%boundary) to predict if the student is admitted or not depending on two
+%features, Exam 1 and 2 scores.
+
+%Error: As I am settting theta equal to all zeroes, it is getting stuck in
+%a local minima and hence theta is not changing and staying at zero. (there
+%might be some other problem also, need to check.
+
 close all;
 clear all;
 clc;

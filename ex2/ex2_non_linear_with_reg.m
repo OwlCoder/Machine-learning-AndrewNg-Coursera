@@ -1,3 +1,7 @@
+%In this code, I am trying to use logistic regression (non-linear decision
+%boundary) to predict if the microchip is accepted or not depending on two
+%features, Test 1 and 2 scores.
+
 clear all;
 close all;
 clc;
