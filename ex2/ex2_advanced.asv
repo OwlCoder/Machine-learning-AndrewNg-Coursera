@@ -39,7 +39,7 @@ pause;
 %``````using optimisation toolset(rather than chosing alpha)``````````
 
 options=optimset('GradObj','on','MaxIter',400,'TolX', 1e-18);
-[theta, J]=fminunc(@(t)(costfunction(X,Y,t)),initial_theta, options);
+[theta, J]=fminunc(@(t)(costFunctionReg(t,X,Y,lambda)),initial_theta, options);
 fprintf('Cost at theta found by fminunc: %f\n', J);
 fprintf('theta: \n');
 fprintf(' %f \n', theta);
