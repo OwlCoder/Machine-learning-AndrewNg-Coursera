@@ -5,7 +5,6 @@
 %Error: As I am settting theta equal to all zeroes, it is getting stuck in
 %a local minima and hence theta is not changing and staying at zero. (there
 %might be some other problem also, need to check.
-
 close all;
 clear all;
 clc;
