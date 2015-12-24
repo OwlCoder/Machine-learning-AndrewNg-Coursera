@@ -1,6 +1,6 @@
 function plotDecisionBoundary_non_linear(theta, X,y)
-    u = linspace(-1, 1.5, 50);
-    v = linspace(-1, 1.5, 50);
+    u = linspace(30, 100, 500);
+    v = linspace(30, 100, 500);
 
     z = zeros(length(u), length(v));
     % Evaluate z = theta*x over the grid
@@ -9,7 +9,7 @@ function plotDecisionBoundary_non_linear(theta, X,y)
             z(i,j) = mapFeature(u(i), v(j))*theta;
         end
     end
-    z = z'; % important to transpose z before calling contour
+    z = z'% important to transpose z before calling contour
     % Plot z = 0
     % Notice you need to specify the range [0, 0]
     contour(u, v, z, [0, 0], 'LineWidth', 2)
