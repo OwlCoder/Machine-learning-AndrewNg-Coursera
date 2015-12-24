@@ -17,7 +17,4 @@ pause;
 lambda=0.1
 theta=zeros(n+1,1)
 theta_all=onevsall(X, y, theta, lambda) %theta_all is k x n+1
-predictions = sigmoid(X * theta);
-J = (1 / m) * (sum(-y .* log(predictions) - (1 - y) .* log(1 - predictions))) + (lambda / (2 * m)) * sum(theta(2:end) .^ 2);
-
 %
