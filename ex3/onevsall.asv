@@ -1,5 +1,8 @@
-function theta_all=onevsall(X, y, theta, lambda)
+function theta_all=onevsall(X, y, num_classes, lambda)
 [m,n]=size(X);
+theta_all=zeros(num_classes, n)
+for i=1:num_classes
+    theta_all(c,:
 predictions = sigmoid(X * theta);
 J = (1 / m) * (sum(-y .* log(predictions) - (1 - y) .* log(1 - predictions))) + (lambda / (2 * m)) * sum(theta(2:end) .^ 2);
 
